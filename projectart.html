@@ -1,97 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        header {background-color:palevioletred;
-            padding: 30px;
-            text-align: center;
-            font-size: 35px;
-            color: white;}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        footer {background-color:palevioletred;
-            padding: 30px;
-            text-align: center;
-            font-size: 35px;
-            color: white;}
-        
-        body {background-color: mistyrose;
-            font-family: 'Brush Script MT', cursive;}
+    <link rel="stylesheet" href="main.css" />
 
-        h1 {text-align: center;}
-        h2 {text-align: center;}
-        h3 {text-align: center;}
-        p {text-align: center;}
-        div {text-align: center;}
+    <title>Projects</title>
+  </head>
 
-        nav {text-align: center;}
-        nav {overflow: hidden;
-            background-color:lightpink;}
+  <body>
+    <header>
+      <h1 style="font-size: larger">The Almighty Portfolio!</h1>
+      <p style="font-size: medium">
+        Thank you so much for stopping by! I hope you see something you like!
+      </p>
+    </header>
 
-        nav a {float: center;
-            color: white;
-            text-align: center;
-            padding: 16px 18px;
-            text-decoration: none;
-            font-size: 20px;}
+    <nav>
+      <a href="./index.html">Home</a> | <a href="./about.html">About</a> |
+      <a href="./projectart.html">Projects</a> |
+      <a href="./fanart.html">Fanart</a> |
+      <a href="./resume.html">Contact Me</a>
+    </nav>
 
-        nav a:hover {background-color: #ddd;
-            color: black;}
+    <h2 style="background-color: lightpink" style="font-size: 400px">
+      Projects!
+    </h2>
+    <img
+      src="https://media.discordapp.net/attachments/1096659630169522236/1096669288892485722/Val_process.jpg?width=858&height=490"
+      alt="val"
+      id="val"
+    />
+    <img
+      src="https://media.discordapp.net/attachments/1096659630169522236/1096670914055258182/Aphrodite_process.jpg?width=816&height=490"
+      alt="Aphrodite_process"
+      id="Aphrodite_process"
+    />
 
-        nav a.active {background-color: PaleVioletRed;
-            color: white;}
+    <h2 style="background-color: lightpink" style="font-size: 400px">
+      Sketches and Studies
+    </h2>
+    <img
+      src="https://cdn.discordapp.com/attachments/1096659630169522236/1096659737925386280/Sketchpage_4-11-23.jpg"
+      alt="Sketch Page"
+      width="700"
+      height="500"
+      id="Sketchpage"
+    />
 
-        .progress-container {
-            width: 100%;
-            height: 8px;
-            background: #ccc;}
+    <footer></footer>
 
-        .progress-bar {
-            height: 8px;
-            background: #04AA6D;
-            width: 0%;}
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+        myFunction();
+      };
 
-
-
-        </style>
-        <title>Projects</title>
-    </head>
-
-    <body>
-        <header>
-            <h1 style= "font-size: larger;">The Almighty Portfolio!</h1>
-            <p style="font-size: medium;"> Thank you so much for stopping by! I hope you see something you like!</p>
-        </header>
-
-        <nav>
-            <a href="./index.html">Home</a> |
-            <a href="./about.html">About</a> |
-            <a href="./projectart.html">Projects</a> |
-            <a href="./fanart.html">Fanart</a> |
-            <a href="./resume.html">Contact Me</a>
-          </nav>
-    
-            <h2 style="background-color: lightpink;"style="font-size:400px;">Projects!</h2>
-                <img src="https://media.discordapp.net/attachments/1096659630169522236/1096669288892485722/Val_process.jpg?width=858&height=490" alt="val"  id="val"/>
-                <img src="https://media.discordapp.net/attachments/1096659630169522236/1096670914055258182/Aphrodite_process.jpg?width=816&height=490" alt="Aphrodite_process"  id="Aphrodite_process"/>
-
-            <h2 style="background-color: lightpink;"style="font-size:400px;">Sketches and Studies</h2>
-                <img src="https://cdn.discordapp.com/attachments/1096659630169522236/1096659737925386280/Sketchpage_4-11-23.jpg" alt="Sketch Page" width= "700" height= "500" id="Sketchpage"/>
-    
-        <footer></footer>
-
-
-        <script>
-            // When the user scrolls the page, execute myFunction 
-            window.onscroll = function() {myFunction()};
-            
-            function myFunction() {
-              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-              var scrolled = (winScroll / height) * 100;
-              document.getElementById("myBar").style.width = scrolled + "%";
-            }
-            </script>
-    </body>
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
+  </body>
+</html>
